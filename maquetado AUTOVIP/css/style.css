@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#carCarousel {
+  border-bottom: solid 5px orange;
+  height: 36vw;
+}
+
+#footer {
+  background-color: rgb(0, 0, 0);
+  height: 8.4rem;
+  border-top: solid 5px orange;
+}
+
+#navBar {
+  background-color: rgb(0, 0, 0);
+  height: 3.7rem;
+  border-bottom: solid 5px orange;
+}
