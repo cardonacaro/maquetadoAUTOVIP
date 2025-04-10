@@ -23,3 +23,24 @@
 #welcomeTitle {
   margin-left: 15%;
 }
+
+#filterBtn {
+  background-color: orange !important;
+  color: white !important;
+  width: 100%;
+}
+
+#currencyTypeBtn {
+  width: 100%;
+}
+
+#filterContainer {
+  border: solid 1px rgb(238, 236, 236);
+  background-color: rgb(243, 243, 243);
+}
+
+.imgCar {
+  padding-top: 10px;
+  border: solid 1px, rgb(236, 236, 236);
+  height: 14rem;
+}

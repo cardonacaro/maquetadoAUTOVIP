@@ -1,155 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
-			crossorigin="anonymous" />
-		<link
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-			rel="stylesheet" />
-		<link rel="stylesheet" href="css/style.css" />
-		<title>AUTOVIP - Ventas</title>
-	</head>
-	<body>
-		<!--nav bar-->
-		<div class="container-fluid px-0">
-			<nav class="navbar navbar-expand-lg px-5" id="navBar">
-				<div class="container">
-					<a class="navbar-brand" href="index.html"
-						><img
-							src="/maquetado AUTOVIP/img/automotora_vip_logo.png"
-							alt="logo"
-							style="width: 9rem; height: auto"
-					/></a>
-				</div>
-				<ul class="navbar-nav" style="width: 50%">
-					<li class="nav-item">
-						<a
-							class="nav-link active text-secondary"
-							aria-current="page"
-							href="ventas.html"
-							target="_blank"
-							>Venta 0km</a
-						>
-					</li>
-					<li class="nav-item">
-						<a
-							class="nav-link active text-secondary"
-							aria-current="page"
-							href="ventas.html"
-							target="_blank"
-							>Venta Usados</a
-						>
-					</li>
-					<li class="nav-item">
-						<a
-							class="nav-link active text-secondary"
-							aria-current="page"
-							href="sobre-nosotros.html"
-							target="_blank"
-							>Sobre Nosotros</a
-						>
-					</li>
-					<li class="nav-item">
-						<a
-							class="nav-link active text-secondary"
-							aria-current="page"
-							href="#"
-							>Contacto</a
-						>
-					</li>
-				</ul>
-			</nav>
-		</div>
-		<!--ventas-->
-		<div class="container-fluid">
-			<div class="container row" id="mainContainer">
-				<div class="col-md-6">
-					<h1>Ventas</h1>
-				</div>
-				<div class="col-md-6">Tipo de cambio</div>
-			</div>
-			<div class="container row" id="secondContainer">
-				<div class="col-md-4">
-					<form>
-						<div>
-							<h3>Filtro</h3>
-							<hr />
-						</div>
-						<div class="mb-3">
-							<label for="input" class="form-label">Año</label>
-							<select
-								class="form-select"
-								aria-label="Default select example"
-								id="input">
-								<option selected>Seleccionar</option>
-								<option value="1">One</option>
-								<option value="2">Two</option>
-								<option value="3">Three</option>
-							</select>
-						</div>
-					</form>
-				</div>
-				<div class="col-md-8" id="carsCardsContainer"></div>
-			</div>
-		</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>AUTOVIP - Ventas</title>
+  </head>
+  <body>
+    <!--nav bar-->
+    <div class="container-fluid px-0">
+      <nav class="navbar navbar-expand-lg px-5" id="navBar">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            ><img
+              src="/maquetado AUTOVIP/img/automotora_vip_logo.png"
+              alt="logo"
+              style="width: 9rem; height: auto"
+          /></a>
+        </div>
+        <ul class="navbar-nav" style="width: 50%">
+          <li class="nav-item">
+            <a
+              class="nav-link active text-secondary"
+              aria-current="page"
+              href="ventas.html"
+              target="_blank"
+              >Venta 0km</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active text-secondary"
+              aria-current="page"
+              href="ventas.html"
+              target="_blank"
+              >Venta Usados</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active text-secondary"
+              aria-current="page"
+              href="sobre-nosotros.html"
+              target="_blank"
+              >Sobre Nosotros</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active text-secondary"
+              aria-current="page"
+              href="#"
+              >Contacto</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
 
-		<!--footer-->
-		<footer id="footer">
-			<div class="container pt-5">
-				<div class="row text-center text-md-start">
-					<a class="col-md-3 mb-3" href="index.html"
-						><img
-							src="/maquetado AUTOVIP/img/automotora_vip_logo.png"
-							alt="logo"
-							style="width: 9rem; height: auto"
-					/></a>
-					<div class="col-md-3 mb-3">
-						<ul class="list-unstyled">
-							<li class="mb-2">
-								<a href="ventas.html" class="text-white text-decoration-none"
-									>Venta 0km</a
-								>
-							</li>
-							<li>
-								<a
-									href="ventas.html"
-									class="text-white text-decoration-none"
-									target="_blank"
-									>Venta Usados</a
-								>
-							</li>
-						</ul>
-					</div>
-					<div class="col-md-3 mb-3">
-						<ul class="list-unstyled">
-							<li class="mb-2">
-								<a
-									href="sobre-nosotros.html"
-									class="text-white text-decoration-none"
-									target="_blank"
-									>Sobre Nosotros</a
-								>
-							</li>
-							<li>
-								<a
-									href="#"
-									class="text-white text-decoration-none"
-									target="_blank"
-									>Contacto</a
-								>
-							</li>
-						</ul>
-					</div>
-					<div class="col-md-3 text-md-end">
-						<p class="mb-0 text-white">Copyright © AutoVIP 2025</p>
+    <!--ventas-->
+    <div class="container-fluid p-5">
+      <div class="container row" id="mainContainer">
+        <div class="col-md-6 pb-2">
+          <h1>Ventas</h1>
+        </div>
+        <div class="col-md-6 pb-2">Tipo de cambio</div>
+        <hr />
+      </div>
+      <div class="container row pt-4" id="secondContainer">
+        <!--filtro-->
+		<div class="col-md-2">
+        <div class="container py-3" id="filterContainer">
+          <form>
+            <div>
+              <h4>Filtro</h4>
+              <hr />
+            </div>
+            <div class="mb-3">
+              <label for="input" class="form-label"><b>Año</b></label>
+              <select
+                class="form-select"
+                aria-label="Default select example"
+                id="input"
+              >
+                <option selected>Seleccionar...</option>
+                <option value="1">2017</option>
+                <option value="2">2016</option>
+                <option value="3">2015</option>
+                <option value="3">2014</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="input" class="form-label"><b>Marca</b></label>
+              <select
+                class="form-select"
+                aria-label="Default select example"
+                id="input"
+              >
+                <option selected>Seleccionar...</option>
+                <option value="1">Audi</option>
+                <option value="2">Bentley</option>
+                <option value="3">BMW</option>
+                <option value="4">Jaguar</option>
+                <option value="5">Volvo</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="input" class="form-label"><b>Modelo</b></label>
+              <select
+                class="form-select"
+                aria-label="Default select example"
+                id="input"
+              >
+                <option selected>Seleccionar...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="input" class="form-label"><b>Estado</b></label>
+              <select
+                class="form-select"
+                aria-label="Default select example"
+                id="input"
+              >
+                <option selected>Seleccionar...</option>
+                <option value="1">0km</option>
+                <option value="2">Usado</option>
+              </select>
+            </div>
+            <div>
+              <button
+                type="button"
+                class="btn btn-outline-light"
+                id="filterBtn"
+              >
+                <i
+                  class="fa-solid fa-magnifying-glass"
+                  style="color: #ffffff"
+                ></i>
+                Filtrar
+              </button>
+            </div>
+          </form>
+        </div>
+		<div>
+			<button
+			  type="button"
+			  class="btn btn-outline-dark mt-4"
+			  id="currencyTypeBtn"
+			>
+			  <i class="fa-solid fa-dollar-sign" style="color: #000000"></i>
+			  Cambiar moneda
+			</button>
+		  </div>
+      </div>
+      <div class="col-md-10" id="carsCardsContainer">
+		<div id="carsCard">
+			<div class="container row">
+				<div class="col-md-4 imgCar"><img src="/maquetado AUTOVIP/img/cars_sales/audi_a6_quattro_2016.jpg" alt="audiA6" style="width: 100%;height: auto;"></div>
+				<div class="col-md-8">
+					<h2>Audi A6 Quattro</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ullam fugit animi quaerat laudantium accusantium quae commodi sint, rerum exercitationem ducimus, aperiam doloremque neque corporis omnis ab voluptatem dignissimos? Eaque?</p>
+					<div id="carCardBtns">
+						<button type="button" class="btn btn-success"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Comprar</button>
+					    <button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-square-plus" style="color: #000000;"></i> Más información</button>
+						<button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-share-from-square" style="color: #000000;"></i> Compartir</button>
 					</div>
 				</div>
 			</div>
-		</footer>
-	</body>
+
+		</div>
+	  </div>
+    </div>
+
+    <!--footer-->
+    <footer id="footer">
+      <div class="container pt-5">
+        <div class="row text-center text-md-start">
+          <a class="col-md-3 mb-3" href="index.html"
+            ><img
+              src="/maquetado AUTOVIP/img/automotora_vip_logo.png"
+              alt="logo"
+              style="width: 9rem; height: auto"
+          /></a>
+          <div class="col-md-3 mb-3">
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="ventas.html" class="text-white text-decoration-none"
+                  >Venta 0km</a
+                >
+              </li>
+              <li>
+                <a
+                  href="ventas.html"
+                  class="text-white text-decoration-none"
+                  target="_blank"
+                  >Venta Usados</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-3">
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a
+                  href="sobre-nosotros.html"
+                  class="text-white text-decoration-none"
+                  target="_blank"
+                  >Sobre Nosotros</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-white text-decoration-none"
+                  target="_blank"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 text-md-end">
+            <p class="mb-0 text-white">Copyright © AutoVIP 2025</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
