@@ -39,10 +39,28 @@
 	background-color: rgb(243, 243, 243);
 }
 
-.imgCar {
-	padding-top: 10px;
+.imgCarContainer {
+	padding: 5px;
 	border: solid 1px, rgb(236, 236, 236);
-	height: 14rem;
+	position: relative;
+}
+
+#new {
+	position: absolute;
+	background-color: orange;
+	color: white;
+	font-size: small;
+	top: 15px;
+	left: 15px;
+	border: solid 1px orange;
+	border-radius: 4px;
+	width: 15%;
+	text-align: center;
+}
+
+.imgCar {
+	width: 100%;
+	height: auto;
 }
 
 .indexImg {
@@ -62,6 +80,7 @@
 
 .cardContainer {
 	position: relative;
+	margin-bottom: 20px;
 }
 
 .btn-outline-secondary {
