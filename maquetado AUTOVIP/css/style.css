@@ -49,3 +49,21 @@
 	height: 36vw;
 	object-fit: cover;
 }
+
+.newPriceRating {
+	position: absolute;
+	right: 0;
+}
+
+.checked,
+.empty {
+	color: orange;
+}
+
+.cardContainer {
+	position: relative;
+}
+
+.btn-outline-secondary {
+	color: black !important;
+}

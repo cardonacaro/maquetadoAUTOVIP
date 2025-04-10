@@ -150,7 +150,7 @@
 					<div>
 						<button
 							type="button"
-							class="btn btn-outline-dark mt-4"
+							class="btn btn-outline-secondary mt-4"
 							id="currencyTypeBtn">
 							<i class="fa-solid fa-dollar-sign" style="color: #000000"></i>
 							Cambiar moneda
@@ -159,7 +159,7 @@
 				</div>
 				<div class="col-md-10" id="carsCardsContainer">
 					<div id="carsCard">
-						<div class="container row">
+						<div class="container row cardContainer">
 							<div class="col-md-4 imgCar">
 								<img
 									src="/maquetado AUTOVIP/img/cars_sales/audi_a6_quattro_2016.jpg"
@@ -167,7 +167,18 @@
 									style="width: 100%; height: auto" />
 							</div>
 							<div class="col-md-8">
-								<h2>Audi A6 Quattro</h2>
+								<div class="d-flex flex-wrap">
+									<h2>Audi A6 Quattro</h2>
+									<span class="newPriceRating"
+										>2016 | USD 98.000 |
+
+										<span class="fa-solid fa-star checked"></span>
+										<span class="fa-solid fa-star checked"></span>
+										<span class="fa-solid fa-star checked"></span>
+										<span class="fa-solid fa-star checked"></span>
+										<span class="fa-regular fa-star empty"></span>
+									</span>
+								</div>
 								<p>
 									Lorem ipsum, dolor sit amet consectetur adipisicing elit.
 									Reprehenderit placeat excepturi modi in. Voluptate illo
@@ -185,13 +196,13 @@
 											style="color: #ffffff"></i>
 										Comprar
 									</button>
-									<button type="button" class="btn btn-outline-dark">
+									<button type="button" class="btn btn-outline-secondary">
 										<i
 											class="fa-solid fa-square-plus"
 											style="color: #000000"></i>
 										Más información
 									</button>
-									<button type="button" class="btn btn-outline-dark">
+									<button type="button" class="btn btn-outline-secondary">
 										<i
 											class="fa-solid fa-share-from-square"
 											style="color: #000000"></i>
