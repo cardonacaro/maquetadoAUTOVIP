@@ -86,3 +86,9 @@
 .btn-outline-secondary {
 	color: black !important;
 }
+
+.doble-borde {
+	border: 8rem;
+	outline: 3rem;
+	outline-offset: -1;
+}
